@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/foundation.css" />
+
+    <!-- TODO: Add Icon and other settings -->
+    <link rel="shortcut icon" type="x-icon" href="" /> 
+    
+    <title>E-Waste Solutions</title>
+</head>
+<body>
+
+
+    
+
+    <!-- Given Nav -->
+    <nav class="navbar">
+        <div class="brand-title">E-Waste Solutions</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/About/">About</a></li>
+                <li><a href="/Location/">Location</a></li>
+                <li><a href="/FAQ/">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- https://ewasa.org/frequently-asked-e-waste-questions/ -->
+    <section class="MainFAQ">
+        <div class="FAQContainer">
+            
+            <h1 class="FAQHeader">FAQ</h1>
+            <div class="FAQBOX">
+                <button class="accordion">Is there a cost for recycling electronics?</button>
+                <div class="panel">
+                <p>
+                    "Sometimes, you may have to make a small payment for recycling used electronics. 
+                    Companies that manage toxic e-waste can charge a fee to collect it and prevent the chemicals from leaking anywhere. 
+                    Printers, old televisions and appliances that are a threat to the environment are challenging to recycle. They require expensive equipment and safe transportation, 
+                    which is why you might have to pay to dispose of them."
+                </p>
+                </div>
+            </div>
+
+            <div class="FAQBOX">
+                <button class="accordion">Do recyclers wipe out data from laptops or smartphones?</button>
+                <div class="panel">
+                <p>
+                    "This is quite a huge concern for people looking to recycle their devices. 
+                    It is recommended that you erase the data and all information from computers, 
+                    laptops and tablets before sending them to a recycling facility. 
+                    Wipe the hard drive clean and back up the data to your cloud or storage device. 
+                    Some recycling businesses also protect confidential information by erasing the drive as part of the process."
+                </p>
+                </div>
+            </div>
+
+            <div class="FAQBOX">
+                <button class="accordion">What happens to e-waste that is recycled?</button>
+                <div class="panel">
+                <p>
+                    "Mainly, large industries recycle old electronics for plastics, copper and aluminium. Some businesses also resell parts or accessories at reasonable prices. 
+                    Recycling facilities can also refurbish and sell gadgets that are in good condition and have a second-hand market value."
+                </p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--Form-->
+        <div class="FAQContactForm">
+            <h1 class="FAQHeader">Contact</h1>
+            <h4 class="FAQHeader">For more information, contact us below!</h4>
+            <!--The form information-->
+            <form action="https://formsubmit.co/fatran@stthomas.edu" method="POST">
+                <div class="formBox">
+
+                    <div class="row50">
+                        <div class="inputBox">
+                            <span>First Name <Font color="red">*</Font></span>
+                            <input type="text" placeholder="John" name="FirstName" id="FirstName" required />
+                        </div>
+
+                        <div class="inputBox">
+                            <span>Last Name <Font color="red">*</Font></span>
+                            <input type="text" placeholder="Doe" name="LastName" id="LastName" required />
+                        </div>
+                    </div>
+
+
+                    <div class="row50">
+                        <div class="inputBox">
+                            <span>Email <Font color="red">*</Font></span>
+                            <input type="email" placeholder="johndoe@example.com" name="email" id="Email" required />
+                        </div>
+
+                        <div class="inputBox">
+                            <span>Mobile</span>
+                            <input type="tel" placeholder="+1 (651) 123-4567" name="Phone" />
+                        </div>
+                    </div>
+
+
+                    <div class="row100">
+                        <div class="inputBox">
+                            <span>Message <Font color="red">*</Font></span>
+                            <textarea placeholder="Write your message here" name="Message" required></textarea>
+                        </div>
+                    </div>
+
+
+                    <div class="row100">
+                        <div class="inputBox">
+                            <input type="hidden" name="_next" value="https://www.youtube.com/embed/oHg5SJYRHA0?autoplay=1" />
+                            <input type="text" name="_honey" style="display:none">
+                            <input type="hidden" name="_autoresponse" value="Hello! Thank you for reaching out! I will get back to you as soon as possible!" />
+                            <input class="FormButton" type="submit" value="Send" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- Consistent -->
+    <section id="Footer">
+
+        <div class="FooterBackground cell grid-x grid-padding-x ">
+            <div class="FooterDescription cell grid-x large-6">
+                <div class="Footer cell">
+                    <p>E-Waste Solution was created for the course Web Design at the University of St. Thomas</p>
+                </div>
+                <div class="Footer cell">
+                    <p>Copyright © 2024 E-Waste Solutions. All Rights Reserved.</p>
+                </div>
+            </div>
+    
+            <div class="FooterLinks cell grid-x large-6 large-text-right">
+                <div class="FooterLink cell">
+                    <a class="FooterLinked" href="/index.html">Home</a>
+                </div>
+                <div class="FooterLink cell">
+                    <a class="FooterLinked" href="/About/">About</a>
+                </div>
+                <div class="FooterLink cell">
+                    <a class="FooterLinked" href="/Location/">Location</a>
+                </div>
+                <div class="FooterLink cell">
+                    <a class="FooterLinked" href="/FAQ/">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active2");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+        }
+    </script>
+
+
+    <!-- Foundation CSS Framework: include before closing <body> tag -->
+    <script src="/js/vendor/jquery.js"></script>
+    <script src="/js/vendor/what-input.js"></script>
+    <script src="/js/vendor/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+        toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+        })
+    </script>
+
+</body>
+</html>

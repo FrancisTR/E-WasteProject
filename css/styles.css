@@ -1,0 +1,667 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+button {
+    border: 4px solid black !important;
+    padding: 1em !important;
+    border-radius: .5em !important;
+}
+
+button:hover {
+    background-color: #00e28b;
+    cursor: pointer;
+}
+
+.OppositeButton {
+    border: 4px solid rgb(255, 255, 255) !important;
+    padding: 1em !important;
+    border-radius: .5em !important;
+    color: white;
+}
+
+.OppositeButton:hover {
+    background-color: #00e28b;
+    color: black;
+    border: 4px solid black !important;
+    cursor: pointer;
+}
+
+/* Waves background Home */
+.custom-shape-divider-bottom-1715708835 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1715708835 svg {
+    position: relative;
+    display: block;
+    width: calc(151% + 1.3px);
+    height: 130px;
+}
+
+.custom-shape-divider-bottom-1715708835 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* FAQ */
+.custom-shape-divider-top-1715708684 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1715708684 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 162px;
+}
+
+.custom-shape-divider-top-1715708684 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+
+
+
+
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 5em;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #008116;
+    color: white;
+    z-index: 999;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin-left: 1em;
+    font-weight: bold;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin-top: .5rem;
+    margin-right: .5rem;
+}
+
+.navbar-links li {
+    list-style: none;
+    /* margin-left: 1em; */
+    color: black;
+    border-radius: 1em;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 1rem;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: 0em 1em 0em 1em;
+    border: 4px solid black;
+    border-radius: .5em;
+    transition: .2s;
+}
+
+.navbar-links li a:hover {
+    background-color: #00e28b;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.3rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.5em;
+    height: 2.3em;
+    padding: .5em;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+        background-color: black;
+        border-radius: .3em;
+        transition: .5s;
+    }
+
+    .toggle-button:hover {
+        background-color: rgba(255, 255, 255, 0.411);
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 1.3em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .navbar-links ul li {
+        width: 100%;
+        text-align: center;
+        background-color: rgb(37, 37, 37);
+        margin-left: 0;
+        border-radius: 0;
+        border: none;
+        margin-top: -.1em;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+        color: black;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .brand-title {
+        margin-top: .91em;
+    }
+}
+
+/* background for home page */
+#Home {
+    width: 100%;
+    background-color: rgb(23, 157, 235);
+    position: relative;
+    min-height: 81vh;
+    color: white;
+}
+
+#Location {
+    width: 100%;
+    position: relative;
+}
+
+.LocationHeader {
+    text-align: center;
+}
+
+#FAQ {
+    width: 100%;
+    background-color: rgb(23, 157, 235);
+    position: relative;
+    min-height: 50vh;
+    margin-bottom: 0 !important;
+    color: white;
+}
+
+.FAQtxt {
+    margin-top: 10em !important;
+}
+
+
+
+
+/* First page and Second page in HOME */
+#Home,
+#About,
+#Location,
+#FAQ,
+.MainLocation,
+.MainFAQ {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+/* Txt and h1 in general */
+.Hometxt,
+.Locationtxt,
+.FAQtxt {
+    margin-top: 5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Hometxt h1,
+.Locationtxt h1,
+.FAQtxt h1 {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+
+.HomeImg,
+.LocationImg {
+    text-align: center;
+}
+
+.HomeImg img,
+.LocationImg img {
+    margin-top: 5em;
+    width: 100%;
+    max-width: 20em;
+    min-width: 10em;
+}
+
+/* Home Custon */
+.Hometxt p,
+.Locationtxt p {
+    margin: 0 4em 0 4em;
+}
+
+
+.statButton,
+.FAQButton {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.FAQButton {
+    margin-bottom: 3em;
+}
+
+/* Footer */
+#Footer {
+    color: white;
+}
+
+.FooterBackground {
+    height: auto;
+    background-color: #008116;
+}
+
+.Footer p {
+    margin-top: 1em;
+    /* margin-left: 5em; */
+}
+
+.FooterLinks {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.FooterLinked {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.FooterLinked:hover {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FAQ */
+.FAQContainer {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.MainFAQ {
+    padding: 2em;
+}
+
+
+
+.FAQContactForm {
+    margin: 5em;
+    border: 4px solid black !important;
+    background-color: rgb(23, 157, 235);
+    padding: 4em;
+    border-radius: .5em;
+}
+
+.inputBox textarea{
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+
+.FormButton {
+    border: 4px solid black !important;
+    padding: 1em !important;
+    border-radius: .5em !important;
+}
+
+.FormButton:hover {
+    background-color: #00e28b;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.FAQHeader {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 2.5em !important;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active2,
+.accordion:hover {
+    background-color: #00e28b;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 2em;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    margin-bottom: 1em;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    /* color: #777; */
+    float: right;
+    margin-left: 5px;
+}
+
+.active2:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+@media screen and (max-width: 626px){
+    .FAQContactForm{
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Location */
+.MainLocation {
+    padding: 5em;
+}
+
+#map {
+    height: 50em;
+    z-index: 0;
+    border: 4px solid rgb(23, 157, 235);
+    margin-top: 1em;
+    border-radius: 1em;
+}
+
+.LocationBox {
+    cursor: pointer;
+}
+
+.LocationBox h4,
+.LocationBox p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.list h1 {
+    text-align: center;
+}
+
+.list div:hover {
+    background-color: #00e28b;
+    cursor: pointer;
+}
+
+.list div {
+    padding: .5em;
+    border-radius: .5em;
+    border: 4px solid black;
+    margin-top: .8em;
+}
+
+
+
+
+
+
+
+
+
+
+/* About */
+.AboutTimeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.AboutContainer {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    /* background-color: rgb(0, 0, 0, 0.3); */
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+
+@keyframes movedown {
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.AboutContainer:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.AboutContainer:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.AboutContainer:nth-child(3) {
+    animation-delay: 4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.AboutBox {
+    padding: 20px 30px;
+    background: rgb(23, 157, 235);;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    color: white
+}
+
+/* Card position */
+.left-card {
+    left: 0;
+}
+
+.right-card {
+    left: 50%;
+}
+
+.AboutTimeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #000000;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+    0% {
+        height: 0%;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+
+
+
+.AboutBox h2 {
+    font-weight: 600;
+}
+
+.AboutBox small {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+
+.left-AboutContainer-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid rgb(0, 0, 0);
+    right: -15px;
+}
+
+.right-AboutContainer-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid rgb(0, 0, 0);
+    left: -15px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .AboutTimeline {
+        margin: 50px auto;
+    }
+
+    .AboutTimeline::after {
+        left: 31px;
+    }
+
+    .AboutContainer {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+
+    .AboutBox {
+        font-size: 13px;
+    }
+
+    .AboutBox small {
+        margin-bottom: 10px;
+    }
+
+    .right-card {
+        left: 0;
+    }
+
+    .left-AboutContainer-arrow,
+    .right-AboutContainer-arrow {
+        border-right: 15px solid #000000;
+        border-left: 0;
+        left: -15px;
+    }
+
+}
